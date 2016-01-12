@@ -1,0 +1,85 @@
+* { margin: 0px; padding: 0px;}
+ 
+body {
+	background-color:#000 !important;	
+	background: url("../images/main_back.png") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;       
+}
+
+a, button {
+	margin: 0px 3px;
+}
+
+label, p {font-size:14px !important;}
+
+.panel { color : #000 !important; }
+
+/* popup 디자인 */
+.modal-content {
+	background: rgba(0, 0, 0, 0.57) none repeat scroll 0% 0% !important;
+	color: #FFFFFF;
+	font-weight: bold !important;
+}
+
+.modal-block{
+	background: rgba(0, 0, 0, 1) none repeat scroll 0% 0% !important;
+}
+
+.table-hover>tbody>tr:hover{
+	background-color:rgba(245, 245, 245, 0.18) !important;
+}
+
+.modal:nth-of-type(even) {
+    z-index: 9999 !important;
+}
+.modal-backdrop.in:nth-of-type(even) {
+    z-index: 1041 !important;
+}
+/* popup 디자인 */ 
+
+/***** Media queries *****/
+
+@media (min-width: 992px) {
+	div.qna-box, div.qna_content {
+		height:400px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		-webkit-overflow-scrolling: touch;	
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	div.qna-box, div.qna_content {
+		height:400px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		-webkit-overflow-scrolling: touch;	
+	}
+}
+
+@media (max-width: 767px) {
+	
+	.inner-bg { padding: 60px 0 110px 0; }
+	
+	div.qna-box, div.qna_content {
+		height:300px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		-webkit-overflow-scrolling: touch;	
+	}
+}
+
+@media (max-width: 415px) {
+
+	
+	.inner-bg {
+ 		padding: 0px 0 0px 0;
+ 	}
+ 	
+ 	h4,h5 { font-size : 14px !important; }
+
+}
+   
