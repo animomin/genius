@@ -1,4 +1,4 @@
-<!--#include virtual="/content/inc/html5_top.inc"-->
+
 	<div class="top-content">
 	    <div class="inner-bg">
 	    	<div class="container">
@@ -7,7 +7,7 @@
 	    				<h2><strong>GENIUS</strong></h2>
 		    			<h3>문의하기</h3>
 		    			<a class="btn btn-link-2 qna_btn pull-right " id="btn_home" href="/index.asp"><strong> 홈으로	</strong></a>
-              <a class="btn btn-link-2 qna_btn pull-right " id="btn_write" href="/qna.asp"><strong> 글쓰기	</strong></a>
+              <a class="btn btn-link-2 qna_btn pull-right " id="btn_write" href="/qna_write.asp"><strong> 글쓰기	</strong></a>
 		    		</div>
           </div>
 	    		<div class="row">
@@ -46,6 +46,3 @@
 	</div>
 	<div id="popup_container">
 	</div>
-<!--#include virtual="/content/inc/html5_bottom.inc"-->
-<!--#include virtual="/lib/lib.inc"-->
-<!--#include virtual="/content/inc/content.inc"-->

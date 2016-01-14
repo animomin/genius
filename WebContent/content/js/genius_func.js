@@ -1,5 +1,5 @@
 function funcMngr(){
-	this.cookie = {};	
+	this.cookie = {};
 }
 
 funcMngr.prototype ={
@@ -7,34 +7,34 @@ funcMngr.prototype ={
 		readCookie : function(cookies){
 			var me = this;
 			if(this.isNone(cookies) === false){
-				cookies.split("&").forEach(function(v){
+				(cookies.split("&")).forEach(function(v){
 					var arr = v.split("=");
 					arr[1] && (me.cookie[arr[0]] = arr[1]);
-				});	
+				});
 			}
 			return me.cookie;
 		},
 		replace : function(a,b,c){
-			return a.replace(b,c);		
+			return a.replace(b,c);
 		},
 		checkBrowser : function(){
 			var agent = navigator.userAgent.toLowerCase();
 			if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
 				return true;
-			}else{			
+			}else{
 				return false;
 			}
 
 		},
 		isNone : function(a){
 			if(typeof(a) !== "undefined" && a !== "null" && a !== null && a !== ""){
-				return false;	
+				return false;
 			}else{
 				return true;
 			}
 		},
 		isValidate : function(obj){
-			validate = true;		
+			validate = true;
 			obj.find(":input").each(function(){
 				var $obj = $(this),
 					id = $obj.attr('id'),
@@ -61,13 +61,12 @@ funcMngr.prototype ={
 							}).on('focus',function(){
 								$obj.val("");
 								$obj.popover('destroy');
-							});					
+							});
 						}
 						break;
 				}
-				
+
 			});
 			return validate;
 		}
 };
-

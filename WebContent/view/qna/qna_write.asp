@@ -1,4 +1,4 @@
-<!--#include virtual="/content/inc/html5_top.inc"-->
+
 	<div class="top-content">
 	    <div class="inner-bg">
 	    	<div class="container">
@@ -7,7 +7,7 @@
               <div class="col-sm-8 col-sm-offset-2 text">
                 <h2><strong>GENIUS</strong></h2>
                 <h3>문의하기</h3>
-                <a class="btn btn-link-2 qna_btn pull-right " id="btn_list" href="/qna.asp">
+                <a class="btn btn-link-2 qna_btn pull-right " id="btn_list" href="/qna_list.asp">
                   <span class="glyphicon glyphicon-list">
                   </span><strong> 목록보기	</strong>
                 </a>
@@ -41,6 +41,3 @@
 	    	</div>
 	    </div>
 	</div>
-<!--#include virtual="/content/inc/html5_bottom.inc"-->
-<!--#include virtual="/lib/lib.inc"-->
-<!--#include virtual="/content/inc/content.inc"-->

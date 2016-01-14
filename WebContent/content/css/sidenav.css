@@ -1,0 +1,52 @@
+/* Set gray background color and 100% height */
+.sidenav {
+	background: #444;
+	background: rgba(0, 0, 0, 0.3);
+	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
+  height: 100%;
+  width: 160px;
+}
+
+.navbar-menu{
+	position: relative;
+	float: left;
+
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+/* main sidenav hover color */
+.nav > li > a:focus, .nav > li > a:hover{
+	background: rgba(56, 56, 56, 0.72);
+	color: #fff;
+}
+
+.sidenav_item{
+		text-align: left !important;
+}
+
+
+/***** Media queries *****/
+
+@media (min-width: 992px)  {
+	.navbar-menu{display: none;}
+	.sidenav{left : 0;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidenav{left : 0;}
+	.navbar-menu{display: none;}
+}
+
+@media (max-width: 767px) {
+  .sidenav { left : -160px; }
+	.navbar-menu{display: block;}
+}
+
+@media (max-width: 415px) {
+
+
+
+}
