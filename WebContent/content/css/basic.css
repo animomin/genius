@@ -21,6 +21,9 @@ a, button{
 .top-content {
 	 *position: fixed;
 	 *height: 1500px;
+	 width: 100%;
+	 overflow-x: hidden;
+	 box-sizing: border-box;
 }
 
 #main{
@@ -69,11 +72,12 @@ a, button{
 	background-color: inherit;
 }
 
+.no-padding-right{
+	padding-right: 0px !important;
+}
+
 /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
 .row.content {height: 1500px}
-
-
-
 
 /***** Media queries *****/
 

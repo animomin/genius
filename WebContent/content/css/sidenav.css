@@ -21,27 +21,50 @@
 .nav > li > a:focus, .nav > li > a:hover{
 	background: rgba(56, 56, 56, 0.72);
 	color: #fff;
+	border-radius: 0px !important;
 }
 
 .sidenav_item{
 		text-align: left !important;
 }
 
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px !important;
+    border: 1px solid transparent;
+}
+
+.nav-prof{
+    min-height: 145px;
+}
+
+.nav-prof a:hover{
+	background: rgba(56, 56, 56, 0.72) none repeat scroll 0% 0%;
+	color: #FFF;
+	border-radius: 0px !important;
+}
 
 /***** Media queries *****/
 
-@media (min-width: 992px)  {
+@media (min-width: 768px){
+  .sidenav{
+		left : 0;
+		z-index: 2001;
+		position: absolute;
+	}
 	.navbar-menu{display: none;}
-	.sidenav{left : 0;}
-}
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .sidenav{left : 0;}
-	.navbar-menu{display: none;}
 }
 
 @media (max-width: 767px) {
-  .sidenav { left : -160px; }
+  .sidenav {
+		 left : -160px;
+		 display: none;
+		 z-index: 2001;
+		 position:absolute;
+		 width: 70px;
+	}
 	.navbar-menu{display: block;}
 }
 

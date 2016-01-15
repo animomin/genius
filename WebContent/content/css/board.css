@@ -1,0 +1,41 @@
+.summary-board{
+  background: rgba(236, 236, 236, 0.18) none repeat scroll 0% 0%;
+  border: 1px solid rgba(236, 236, 236, 0.18);
+  min-height: 280px;
+  margin: 20px 0px 0px 0px;
+}
+
+.summary-board .summary-board-body{
+  padding: 0 !important;
+}
+
+.summary-board .summary-board-body .summary-board-list{
+  margin-bottom:0px !important;
+}
+
+.summary-board .summary-board-body .summary-board-list a {
+  color: #FFF !important;
+  border:none;
+  border-bottom: 1px solid rgba(236, 236, 236, 0.18);
+  border-radius: 0px;
+}
+
+.summary-board .summary-board-body .summary-board-list a:hover {
+  background: rgba(70, 169, 254, 0.35) none repeat scroll 0% 0%;
+}
+
+.summary-board .summary-board-body .summary-board-list-betting a{
+  padding:5px;
+}
+
+.progress-betting{
+  margin-bottom:0px;
+}
+
+.progress-betting .progress-home{text-align: left !important; padding-left: 10px; animation: 4s linear 0s normal none infinite running progress-bar-stripes !important;}
+.progress-betting .progress-vs{text-align: center !important; animation: 2s linear 0s alternate-reverse none infinite running progress-bar-stripes !important;}
+.progress-betting .progress-away{text-align: right !important; padding-right: 10px; animation: 4s linear 0s reverse none infinite running progress-bar-stripes !important;}
+
+.progress-off {background-color:#2D2D2D !important; background-image: none !important;}
+.progress-betting .progress-bar span.home-score{ padding-right: 5px !important; }
+.progress-betting .progress-bar span.away-score{ padding-left: 5px !important; }
