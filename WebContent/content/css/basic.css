@@ -22,7 +22,7 @@ a, button{
 	 *position: fixed;
 	 *height: 1500px;
 	 width: 100%;
-	 overflow-x: hidden;
+	 *overflow-x: hidden;
 	 box-sizing: border-box;
 }
 
@@ -79,6 +79,7 @@ a, button{
 /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
 .row.content {height: 1500px}
 
+.page-header{margin-top:20px !important;}
 /***** Media queries *****/
 
 @media (min-width: 992px) and (max-width: 1199px) {}
@@ -100,5 +101,5 @@ a, button{
 @media (max-width: 415px) {
 
 	h1, h2 { font-size: 32px; }
-
+  .ic-text { display : none;}
 }

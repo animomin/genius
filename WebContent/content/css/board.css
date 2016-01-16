@@ -1,3 +1,4 @@
+
 .summary-board{
   background: rgba(236, 236, 236, 0.18) none repeat scroll 0% 0%;
   border: 1px solid rgba(236, 236, 236, 0.18);
@@ -39,3 +40,72 @@
 .progress-off {background-color:#2D2D2D !important; background-image: none !important;}
 .progress-betting .progress-bar span.home-score{ padding-right: 5px !important; }
 .progress-betting .progress-bar span.away-score{ padding-left: 5px !important; }
+
+.tabs-body{
+  background: rgba(71, 102, 207, 0.3) none repeat scroll 0% 0%;
+  border-radius: 0px 0px 0px 0px;
+  text-align: left;
+  margin: 5px 0px;
+}
+.tabs-body .nav-tabs {
+  border-bottom:1px solid #5175F0 !important;
+}
+.tabs-body ul li.active a{
+  border-radius: 0px !important;
+  background: rgba(45, 93, 255, 0.43) none repeat scroll 0% 0% !important;
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid rgba(81, 117, 240, 0.3) !important;
+}
+.tabs-body ul li a:hover{
+  color: #FFF;
+  background: rgba(81, 117, 240, 0.3) none repeat scroll 0% 0% !important;
+  border: 1px solid rgba(81, 117, 240, 0.3) !important;
+}
+
+.game-container{
+  background-color: rgba(255, 255, 255, 0.14);
+  position: relative !important;
+  height: 100% !important;
+  min-height: 850px;
+  padding:10px;
+}
+
+.game-group{margin-bottom: 1px;}
+
+.game-row{
+  min-height: 35px;
+  *line-height: 35px;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  color:#000 !important;
+  padding:0px !important;
+}
+.game-table tbody tr td{
+  vertical-align: middle;
+  text-align: center
+}
+
+
+/*
+.game-home,.game-vs,.game-away,.game-home-name,.game-home-score,.game-away-name,.game-away-score{padding-right: 0px !important;padding-left: 0px !important;}
+.game-home, .game-vs, .game-away{
+  min-height: 35px;
+  line-height: 35px !important;
+  padding:3px 3px !important;
+  border:none !important;
+  border-radius: 0px !important;
+}
+*/
+@media (max-width: 1010px){
+  #racing-container,#ladder-container{display:none;}
+}
+
+@media (max-width: 767px) {
+  table.game-table td:nth-child(1){display: none;}
+  .game-table tbody tr td a{
+    font-size: 12px;
+  }
+
+  .game-row .btn-group a{font-family: "Open Sans";font-size: 11px;font-weight: 600;}
+  .game-row .btn-group a .game-name, .game-row .btn-group a .game-score{padding-left: 0px !important; padding-right: 0px !important;}
+}

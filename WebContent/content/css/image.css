@@ -1,0 +1,37 @@
+/* cate image */
+.ic-cate {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+.ic-cate-real{
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+}
+.cate-1{background: url("../images/cate/1.gif");}
+.cate-2{background: url("../images/cate/2.gif");}
+.cate-3{background: url("../images/cate/3.gif");}
+.cate-4{background: url("../images/cate/4.gif");}
+.cate-5{background: url("../images/cate/5.gif");}
+.cate-6{background: url("../images/cate/6.gif");}
+.cate-7{background: url("../images/cate/7.gif");}
+.cate-8{background: url("../images/cate/8.gif");}
+.cate-9{background: url("../images/cate/9.gif");}
+.cate-10{background: url("../images/cate/10.gif");}
+.cate-11{background: url("../images/cate/11.gif");}
+.cate-12{background: url("../images/cate/12.gif");}
+
+/* flag image */
+/*ic_flag flag-1*/
+.ic_flag{
+    width: 27px;
+    height: 17px;
+}
+.flag-1{background: url("../images/league/1.gif")}
+
+/* under over */
+.ic_underover{}
+.ic_over{background:url("../images/result_stripe.png");}
+.ic_under{background:url("../images/result_stripe.png");}

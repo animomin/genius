@@ -8,5 +8,4 @@
 		<meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1">
 		<title>GENIUS</title>
 	</head>
-	<body>
-		
+	<body class="pace-done body-small fixed-nav">
