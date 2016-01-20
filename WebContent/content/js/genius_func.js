@@ -70,9 +70,9 @@ funcMngr.prototype ={
 			return validate;
 		},
 		fix_height : function() {
-			var navheight = $(".top-content > .navbar").height();
-			$("#page-wrapper").css('top',navheight);
-			$("#sidenavbar").css('top',navheight);
+			//var navheight = $(".top-content > .navbar").height();
+			//$("#page-wrapper").css('top',navheight);
+			//$("#sidenavbar").css('top',navheight);
 
 		  var heightWithoutNavbar = $("body > #wrapper").height() - 61;
       $(".sidebard-panel").css("min-height", heightWithoutNavbar + "px");
