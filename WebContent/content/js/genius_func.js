@@ -96,6 +96,33 @@ funcMngr.prototype ={
         }
       }
 
-    }
+    },
+		timeClock : function(strDate){
+			if(strDate.length == 0) strDate = $("#Date");
+
+			setInterval(function(){
+				var korMonth = ["1월", "2월", "3월", "4월", "5월", "6월","7월","8월","9월","10월","11월","12월"];
+				var korDay = ["월요일", "화요일","수요일","목요일","금요일","토요일","일요일"];
+
+				var newDate = new Date();
+				newDate.setDate(newDate.getDate());
+
+				var fullDate = newDate.getFullYear() + "년 " +
+												korMonth[newDate.getMonth()] + " " +
+												newDate.getDate() + "일 " +
+												korDay[newDate.getDay()] + " ";
+
+
+				var hours = new Date().getHours();
+				fullDate += (hours < 10 ? "0" :"")+hours + ":";
+				var minutes = new Date().getMinutes();
+				fullDate += (minutes < 10 ? "0" : "") + minutes + ":";
+				var seconds = new Date().getSeconds();
+				fullDate += (seconds < 10 ? "0" : "") + seconds;
+
+				if(strDate.length == 0) strDate = $("#Date");
+				return strDate.html(fullDate);
+			},1000);
+		}
 
 };

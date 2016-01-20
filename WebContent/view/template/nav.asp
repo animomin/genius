@@ -9,7 +9,7 @@
       </button>
       <a class="navbar-brand text" href="#">GENIUS</a>
     </div>
-    <ul class="nav navbar-top-links navbar-right pull-right">
+    <ul class="nav navbar-top-links navbar-right pull-left">
       <li class="dropdown">
           <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
               <i class="glyphicon glyphicon-shopping-cart"></i>  <span class="label label-success">1</span>

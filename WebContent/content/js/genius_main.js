@@ -8,7 +8,7 @@ $(document).on('ready',function(){
 	//uCookie = fMng.readCookie($.cookie("user"));
 	if(location.pathname == "/index.asp")	pMng.route(location.pathname, $.cookie("user"));
 	// Add body-small class if window less than 768px
-  fMng.fix_height();
+
 })
 /**
  * @biref 로그인 버튼

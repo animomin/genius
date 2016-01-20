@@ -6,6 +6,11 @@
  *   version 2.4
  *
 */
+/* clock */
+.clock {width:800px; margin:0 auto;  color:#000; }
+#Date {text-shadow: 0 0 5px #737373;}
+/* clock */
+
 .blur {
     filter:blur(5px);
     -ms-filter:blur(5px);
@@ -3183,7 +3188,7 @@ body.tour-open .animated {
   width: 220px;
   background: #ebebed;
   padding: 10px 20px;
-  position: absolute;
+  position: fixed;
   right: 0;
 }
 .sidebar-content .wrapper,
@@ -8189,9 +8194,10 @@ body.md-skin {
   }
   .sidebard-panel {
     z-index: 2;
-    position: relative;
-    width: auto;
-    min-height: 100% !important;
+    position: fixed;
+    /* width: auto; */
+    /* min-height: 100% !important; */
+    width: 100%;
   }
   .sidebar-content .wrapper {
     padding-right: 0;

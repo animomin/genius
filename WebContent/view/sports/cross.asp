@@ -1,29 +1,5 @@
-<!--배팅카트 ; 템플릿으로 빼야함  -->
-<div class="sidebard-panel">
+<!--#include virtual="/view/template/cart.asp"-->
 
-    <div class="m-t-md">
-        <h4><span class="glyphicon glyphicon-shopping-cart"></span>배팅카트</h4>
-    </div>
-    <div class="m-t-md">        
-        <div>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <span class="badge badge-primary">16</span>
-                    General topic
-                </li>
-                <li class="list-group-item ">
-                    <span class="badge badge-info">12</span>
-                    The generated Lorem
-                </li>
-                <li class="list-group-item">
-                    <span class="badge badge-warning">7</span>
-                    There are many variations
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!--배팅카트 ; 템플릿으로 빼야함  -->
 <div class="wrapper wrapper-content">
     <div class="row">
         <div class="col-lg-12">

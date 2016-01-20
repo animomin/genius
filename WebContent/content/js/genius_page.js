@@ -64,6 +64,7 @@ pageMngr.prototype = {
 						 return false;
 					 }
 					 $(this).addClass('animated').addClass('fadeIn');
+
 				});
 			}
 		},
@@ -120,9 +121,11 @@ pageMngr.prototype = {
 				 }
 				 //$(this).removeClass('animated').removeClass('fadeIn')
 				 //.addClass('animated').addClass('fadeIn');
+				fMng.fix_height();
 
-				 fMng.fix_height();
+				$("div.sidebard-panel").affix({});
 
+				setInterval(fMng.timeClock($("#Date")),1000);
 			});
 		}
 };
