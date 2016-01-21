@@ -125,7 +125,11 @@ pageMngr.prototype = {
 
 				$("div.sidebard-panel").affix({});
 
-				setInterval(fMng.timeClock($("#Date")),1000);
+				if(url.lastIndexOf("public")>=0){
+					$("#page-wrapper").removeClass('sidebar-content');
+				}
+
+
 			});
 		}
 };

@@ -6,8 +6,9 @@
  *   version 2.4
  *
 */
-/* clock */
+/* clock
 .clock {width:800px; margin:0 auto;  color:#000; }
+*/
 #Date {text-shadow: 0 0 5px #737373;}
 /* clock */
 
@@ -215,7 +216,7 @@ h5 {
   margin-bottom: 0;
 }
 .nav.navbar-top-links a {
-  font-size: 14px;
+  font-size: 18px;
 }
 .navbar-form-custom .form-control {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -580,12 +581,12 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 .top-navigation .navbar-nav .open .dropdown-menu .dropdown-header {
   padding: 10px 15px 10px 20px;
 }
-
+/*
 .btn-primary:focus, .btn-primary:hover {
     background-color: #265A88;
     background-position: 0px -20px;
 }
-
+*/
 @media (max-width: 768px) {
   .top-navigation .navbar-header {
     display: block;
@@ -650,6 +651,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
   *border-color: #1ab394;
   color: #FFFFFF;
 }
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
@@ -688,7 +690,7 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   background-color: #1c84c6;
-  border-color: #1c84c6;
+  /*border-color: #1c84c6;*/
   color: #FFFFFF;
 }
 .btn-success:hover,
@@ -8193,6 +8195,7 @@ body.md-skin {
     float: left;
   }
   .sidebard-panel {
+    display:none; /* 팝업으로 바꾸려고 함*/
     z-index: 2;
     position: fixed;
     /* width: auto; */

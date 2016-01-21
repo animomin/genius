@@ -6,11 +6,11 @@
   margin: 20px 0px 0px 0px;
 }
 
-.summary-board .summary-board-body{
+.summary-board .summary-board-body, .game-board .game-board-body{
   padding: 0 !important;
 }
 
-.summary-board .summary-board-body .summary-board-list{
+.summary-board .summary-board-body .summary-board-list, .game-board .game-board-body .game-board-list{
   margin-bottom:0px !important;
 }
 
@@ -63,16 +63,20 @@
 }
 
 .game-container{
-  background-color: rgba(255, 255, 255, 0.14);
+  /*background-color: rgba(255, 255, 255, 0.14);*/
   position: relative !important;
   height: 100% !important;
   /*min-height: 850px;*/
   padding:10px;
 }
 
-.game-group{margin-bottom: 1px;}
+.game-board{
+  background: rgba(236, 236, 236, 0.4) none repeat scroll 0% 0%;
+  border: 1px solid rgba(236, 236, 236, 0.4);
+  margin: 20px 0px 0px 0px;
+}
 
-.game-row{
+.game-board-body{
   min-height: 35px;
   *line-height: 35px;
   margin-left: 0px !important;
@@ -80,11 +84,81 @@
   color:#000 !important;
   padding:0px !important;
 }
+
+.game-board-body ul li {
+  padding: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  border:none !important;
+}
+.game-board-body ul li div{padding:0px !important;}
+
+
 .game-table tbody tr td{
   vertical-align: middle;
   text-align: center
 }
 
+/* betting board */
+.betting-board{
+  background: rgba(236, 236, 236, 0.18) none repeat scroll 0% 0%;
+  border: 1px solid rgba(236, 236, 236, 0.18);
+  margin: 20px 0px 0px 0px;
+}
+
+.betting-board .betting-board-body, .game-board .game-board-body{
+  padding: 0 !important;
+}
+
+.betting-board .betting-board-body .betting-board-list, .game-board .game-board-body .game-board-list{
+  margin-bottom:0px !important;
+}
+
+.betting-board .betting-board-body .betting-board-list a {
+  color: #FFF !important;
+  border:none;
+  border-bottom: 1px solid rgba(236, 236, 236, 0.18);
+  border-radius: 0px;
+}
+
+.betting-board .betting-board-body .betting-board-list a:hover {
+  background: rgba(70, 169, 254, 0.35) none repeat scroll 0% 0%;
+}
+
+.betting-board .betting-board-body .betting-board-list-betting a{
+  padding:5px;
+}
+/* betting board */
+/* game result */
+.gameResult-board{
+  background: rgba(236, 236, 236, 0.18) none repeat scroll 0% 0%;
+  border: 1px solid rgba(236, 236, 236, 0.18);
+  margin: 20px 0px 0px 0px;
+}
+
+.gameResult-board .gameResult-board-body, .game-board .game-board-body{
+  padding: 0 !important;
+}
+
+.gameResult-board .gameResult-board-body .gameResult-board-list, .game-board .game-board-body .game-board-list{
+  margin-bottom:0px !important;
+}
+
+.gameResult-board .gameResult-board-body .gameResult-board-list a {
+  color: #FFF !important;
+  border:none;
+  border-bottom: 1px solid rgba(236, 236, 236, 0.18);
+  border-radius: 0px;
+}
+
+.gameResult-board .gameResult-board-body .gameResult-board-list a:hover {
+  background: rgba(70, 169, 254, 0.35) none repeat scroll 0% 0%;
+}
+
+.gameResult-board .gameResult-board-body .gameResult-board-list-betting a{
+  padding:5px;
+}
+/* game result */
 
 /*
 .game-home,.game-vs,.game-away,.game-home-name,.game-home-score,.game-away-name,.game-away-score{padding-right: 0px !important;padding-left: 0px !important;}
@@ -101,11 +175,11 @@
 }
 
 @media (max-width: 767px) {
-  table.game-table td:nth-child(1){display: none;}
+  /*table.game-table td:nth-child(1){display: none;}*/
   .game-table tbody tr td a{
     font-size: 12px;
   }
 
-  .game-row .btn-group a{font-family: "Open Sans";font-size: 11px;font-weight: 600;}
-  .game-row .btn-group a .game-name, .game-row .btn-group a .game-score{padding-left: 0px !important; padding-right: 0px !important;}
+  .game-board-body .btn-group a{font-family: "Open Sans";font-size: 11px;font-weight: 600;}
+  .game-board-body .btn-group a .game-name, .game-row .btn-group a .game-score{padding-left: 0px !important; padding-right: 0px !important;}
 }

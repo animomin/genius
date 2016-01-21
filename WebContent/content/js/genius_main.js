@@ -8,7 +8,7 @@ $(document).on('ready',function(){
 	//uCookie = fMng.readCookie($.cookie("user"));
 	if(location.pathname == "/index.asp")	pMng.route(location.pathname, $.cookie("user"));
 	// Add body-small class if window less than 768px
-
+	setInterval(fMng.timeClock($("#Date")),1000);
 })
 /**
  * @biref 로그인 버튼
@@ -66,6 +66,21 @@ $(document).on('ready',function(){
 	event.preventDefault();
 	pMng.route($(this).attr('href'));
 })
+.on('keyup','#cart-odss-betMoney',function(event){
+	var money = $.trim($(this).val());
+	money = money.replace(",","");
+	if(money.length>7) {
+		alert('배팅금액은 천만원을 초과할 수 없습니다.');
+		$(this).val('');
+		return;
+	}
+	if(isNaN(money)) {
+			alert('배팅금액은 숫자로 입력해야 합니다.');
+			$(this).val('');		
+			return;
+		}
+	$(this).val(money.replace(/(\d)(?=(?:\d{3})+(?!\d))/g,'$1,'));
+})
 /**
  * @brief 폼 submit 이벤트
  */
@@ -113,7 +128,7 @@ $(document).on('ready',function(){
 	$(this).attr(pMng.formRoute($(this).attr('id'),$(this)));
 });
 
-
+/* 브라우저 로드, 리사이즈, 스크롤에따른 사이즈 조절*/
 $(window).bind("load resize scroll", function () {
     //if (!$("body").hasClass('body-small')) {
         fMng.fix_height();
