@@ -3386,6 +3386,9 @@ a:focus {
 .border-bottom-light{
   border-bottom: 2px solid rgba(231, 234, 236, 0.49) !important;
 }
+.border-bottom-dark{
+  border-bottom: 1px solid #B7B7B7 !important;
+}
 .font-bold {
   font-weight: 600;
 }
@@ -4828,7 +4831,7 @@ a.compose-mail {
   margin-left: 120px;
 }
 .feed-activity-list .feed-element {
-  border-bottom: 1px solid #e7eaec;
+  border-bottom: 1px solid #B7B7B7;
 }
 .feed-element:first-child {
   margin-top: 0;
@@ -8265,6 +8268,10 @@ body.md-skin {
   .body-small .sidebar-content .wrapper,
   .body-small .wrapper.sidebar-content {
     padding-right: 20px !important;
+  }
+
+  .nav.navbar-top-links a {
+    font-size: 13px;
   }
 
 }

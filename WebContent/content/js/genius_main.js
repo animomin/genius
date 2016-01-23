@@ -65,7 +65,13 @@ $(document).on('ready',function(){
 .on('click','a.sidenav_item',function(event){
 	event.preventDefault();
 	pMng.route($(this).attr('href'));
+	//$("body").toggleClass('mini-navbar');
+	$('html,body').animate({
+    scrollTop: $('html,body').offset().top
+  }, 1000);
 })
+/**
+ */
 .on('keyup','#cart-odss-betMoney',function(event){
 	var money = $.trim($(this).val());
 	money = money.replace(",","");
@@ -76,10 +82,18 @@ $(document).on('ready',function(){
 	}
 	if(isNaN(money)) {
 			alert('배팅금액은 숫자로 입력해야 합니다.');
-			$(this).val('');		
+			$(this).val('');
 			return;
 		}
 	$(this).val(money.replace(/(\d)(?=(?:\d{3})+(?!\d))/g,'$1,'));
+})
+/**
+환전은행 드롭다운박스
+*/
+.on('show.bs.dropdown', '#excharge-bank',function(event){
+	var bankParent = $(this).find('ul');
+	console.log(bankParent.html());
+	fMng.
 })
 /**
  * @brief 폼 submit 이벤트

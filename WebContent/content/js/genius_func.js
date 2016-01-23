@@ -123,6 +123,8 @@ funcMngr.prototype ={
 				if(strDate.length == 0) strDate = $("#Date");
 				return strDate.html(fullDate);
 			},1000);
+		},
+		setBanklist : function(target){
+			for item in banklist
 		}
-
 };

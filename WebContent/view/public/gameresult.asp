@@ -105,6 +105,7 @@
                     </div>
                   </div>
                 </a>
+              </ul>
             </div>
           </div>
         </div>

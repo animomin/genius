@@ -129,6 +129,14 @@ pageMngr.prototype = {
 					$("#page-wrapper").removeClass('sidebar-content');
 				}
 
+				$('[data-toggle="popover"]').popover({placement:"bottom"}).on('shown.bs.popover',function(){
+					var popoverElm = $(this);
+					setTimeout(function () {
+						popoverElm.popover('hide');
+					}, 2000);
+				});
+
+				$('[data-toggle="tooltip"]').tooltip({placement:"bottom"});
 
 			});
 		}
